@@ -11,6 +11,7 @@ class FooterComponent extends Component {
       <div
         className="container col-12"
         style={{
+          marginTop: '150px',
           color: "white",
           background:
             "linear-gradient(90deg, rgba(19,46,55,1) 0%, #3b5998 100%)",
