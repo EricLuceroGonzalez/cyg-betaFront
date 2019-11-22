@@ -7,12 +7,12 @@ import api from "../api/index";
 const inputSty = {
   outline: "none",
   display: "block",
-  background: "rgba(1,1,1, 0.1)",
+  background: "rgba(4,20,175, 0.75)",
   width: "100%",
   border: "0",
   borderRadius: "4px",
   padding: "8px 20px",
-  color: "black",
+  color: "white",
   fontFamily: "inherit",
   fontSize: "inherit",
   fontWeight: "500",
@@ -20,7 +20,6 @@ const inputSty = {
   transition: "0.3s ease",
   fontFamily: 'montserrat-Bold'
 };
-
 // const labelSty = {
 //   display: "block",
 //   margin: "0 0 10px",
@@ -142,19 +141,21 @@ class FormComponent extends Component {
             onReset={this.resetForm}
           >
             <div className="mt-5 mb-3 text-question montserrat-Black">
-              <h3 style={{ fontSize: "0.75em", textAlign: "center" }}>
-                Formulario de concursos
+              <h3 style={{ fontSize: "0.65em", textAlign: "center", color: 'white' }}>
+              COMPARTE Y PREPARATE PARA GANAR
+              <span style={{color: 'red'}}>*</span>
               </h3>
             </div>
-            <p
-              style={{
-                fontSize: "0.75em",
-                fontFamily: "montserrat-Thin",
-                marginTop: "-15px"
-              }}
-            >
-              COMPARTE Y PREPARATE PARA GANAR
-            </p>
+            {/** <p
+            //   style={{
+            //     fontSize: "0.75em",
+            //     fontFamily: "montserrat-Thin",
+            //     marginTop: "-15px"
+            //   }}
+            // >
+            //   COMPARTE Y PREPARATE PARA GANAR
+            // </p>
+          */}
             <FormGroup>
               <div
                 className={`form-group ${this.errorClass(
