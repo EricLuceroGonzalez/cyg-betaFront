@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button, CardImg, Form, FormGroup, Input } from "reactstrap";
-import logo from "./media/logo00.png";
+import logo from "./media/Comentaygana-allWhite.png";
 import { FormErrors } from "./FormErrors";
 import api from "../api/index";
 
@@ -12,12 +12,13 @@ const inputSty = {
   border: "0",
   borderRadius: "4px",
   padding: "8px 20px",
-  color: "gray",
+  color: "black",
   fontFamily: "inherit",
   fontSize: "inherit",
   fontWeight: "500",
   lineHeight: "inherit",
-  transition: "0.3s ease"
+  transition: "0.3s ease",
+  fontFamily: 'montserrat-Bold'
 };
 
 // const labelSty = {
@@ -38,9 +39,9 @@ const formBg = {
 };
 class FormComponent extends Component {
   state = {
-      date: '',
-      email: '',
-      sendedForm: '',
+    date: "",
+    email: "",
+    sendedForm: "",
     formErrors: { email: "" },
     emailValid: false,
     formValid: false,
@@ -145,16 +146,21 @@ class FormComponent extends Component {
                 Formulario de concursos
               </h3>
             </div>
+            <p
+              style={{
+                fontSize: "0.75em",
+                fontFamily: "montserrat-Thin",
+                marginTop: "-15px"
+              }}
+            >
+              COMPARTE Y PREPARATE PARA GANAR
+            </p>
             <FormGroup>
               <div
                 className={`form-group ${this.errorClass(
                   this.state.formErrors.email
                 )}`}
-              >
-                {/**                <Label for="mail" style={labelSty} className="montserrat-Bold">
-                  Correo:
-                </Label> */}
-              </div>
+              ></div>
 
               <Input
                 onChange={event => this.handleUserInput(event)}

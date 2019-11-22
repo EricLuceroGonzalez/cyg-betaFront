@@ -8,34 +8,29 @@ class FooterComponent extends Component {
   state = {};
   render() {
     return (
-      <React.Fragment>
         <div
           className="container col-12"
           style={{
             color: "white",
             background:
               "linear-gradient(90deg, rgba(19,46,55,1) 0%, #3b5998 100%)",
-            // padding: "-14px 10px",
             position: "fixed",
-            bottom: "0px",
-            // marginTop: "60px"
+            bottom: "0px"
           }}
         >
-          <div className="container col-md-4" style={{ fontSize: "8px" }}>
-            <div className="col-lg-4 col-md-6 col-6 mt-4 ml-auto mr-auto">
+            <div className="col-lg-4 col-md-6 col-sm-6 col-4 mt-4 ml-auto mr-auto">
               <CardImg
-                alt="Card image cap....."
-                width="65%"
+                alt="Comenta y Gana"
+                width="25%"
                 src={logo}
+                // style={{border: '1px solid white'}}
               ></CardImg>
             </div>
             <p
-            style={{color: 'white', fontFamily: 'montserrat-ExtraBold', textTransform: 'uppercase'}}>
+            style={{color: 'white',fontSize: '0.65em' ,fontFamily: 'montserrat-ExtraBold', textTransform: 'uppercase'}}>
             pronto tus comentarios te harán ganar
-            </p> 
-          </div>
+            </p>
         </div>
-      </React.Fragment>
     );
   }
 }

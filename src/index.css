@@ -1,4 +1,9 @@
 @font-face {
+  font-family: Montserrat-Thin;
+  src: url(./components/fonts/montserrat/Montserrat-Thin.ttf);
+}
+
+@font-face {
   font-family: Montserrat-Bold;
   src: url(./components/fonts/montserrat/Montserrat-Bold.ttf);
 }
@@ -19,6 +24,10 @@
 }
 .montserrat-Black {
   font-family: Montserrat-BlackItalic;
+}
+
+.montserrat-Thin {
+  font-family: Montserrat-Thin;
 }
 
 .bg {
