@@ -38,7 +38,7 @@ class FooterComponent extends Component {
         </p>
         <p style={{marginTop: '-22px'}}>
           <span style={{ color: "red" }}>*</span>
-          <span style={{ color: "gray", fontSize: "0.7em" }}>
+          <span style={{ color: "gray", fontSize: "0.45em" }}>
             no enviamos correo spam.
           </span>
         </p>
