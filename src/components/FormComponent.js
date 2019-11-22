@@ -141,7 +141,7 @@ class FormComponent extends Component {
             onReset={this.resetForm}
           >
             <div className="mt-5 mb-3 text-question montserrat-Black">
-              <h3 style={{ fontSize: "0.85em", textAlign: "center" }}>
+              <h3 style={{ fontSize: "0.75em", textAlign: "center" }}>
                 Formulario de concursos
               </h3>
             </div>

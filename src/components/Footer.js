@@ -15,13 +15,13 @@ class FooterComponent extends Component {
             color: "white",
             background:
               "linear-gradient(90deg, rgba(19,46,55,1) 0%, #3b5998 100%)",
-            padding: "10px 50px",
+            // padding: "-14px 10px",
             position: "fixed",
             bottom: "0px",
-            marginTop: "60px"
+            // marginTop: "60px"
           }}
         >
-          <div className="container col-md-4" style={{ fontSize: "10px" }}>
+          <div className="container col-md-4" style={{ fontSize: "8px" }}>
             <div className="col-lg-4 col-md-6 col-6 mt-4 ml-auto mr-auto">
               <CardImg
                 alt="Card image cap....."
@@ -29,7 +29,10 @@ class FooterComponent extends Component {
                 src={logo}
               ></CardImg>
             </div>
-            Panama 2019, comentaygana.com 
+            <p
+            style={{color: 'white', fontFamily: 'montserrat-ExtraBold', textTransform: 'uppercase'}}>
+            pronto tus comentarios te harán ganar
+            </p> 
           </div>
         </div>
       </React.Fragment>
