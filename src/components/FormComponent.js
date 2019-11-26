@@ -48,26 +48,23 @@ class FormComponent extends Component {
   };
 
   sendFormData = () => {
-    console.log("inside sendFormData()");
+    console.log("\n\n inside sendFormData()");
     console.log(this.state);
 
     api
-      .postForm(this.state)
+      .postMail(this.state)
       .then(res => {
         this.setState({ sendedForm: "   goForm" });
         console.log({
           mensaje: "Post exitoso",
           response: res.data
         });
-        this.setState({
-          modal: true
-        });
       })
       .catch(err => {
         this.setState({ sendedForm: "errorForm" });
         console.log({
           mensaje: "Post Fallido",
-          response: err.data
+          response: err
         });
       });
   };
@@ -81,7 +78,11 @@ class FormComponent extends Component {
     console.log(this.getCurrentDate());
     this.setState({ date: this.getCurrentDate() });
     // console.log(this.state);
+
+    console.log(this.state);
   };
+
+  
   //Validation of fields:
   validateField(fieldName, value) {
     let fieldValidationErrors = this.state.formErrors;

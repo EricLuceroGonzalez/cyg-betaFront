@@ -1,19 +1,16 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://cyg-beta.herokuapp.com/api"
-  // baseURL: "http://localhost:3001/api"
+  // baseURL: "https://cyg-beta.herokuapp.com/api"
+  baseURL: "http://localhost:8000/api"
 });
 
 // export const getAllComments = () => api.get("/comments");
 // export const postComment = content => api.post("/aComment", content);
-export const postForm = cont => api.post("/newFormUser", cont);
+export const postMail = cont => api.post("/newMail", cont);
 
 const apis = {
-//   getAllComments,
-//   postComment,
-  postForm
+  postMail
 };
 
-// baseURL: "http://localhost:3000/api"
 export default apis;
