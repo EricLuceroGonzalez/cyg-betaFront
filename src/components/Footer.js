@@ -11,7 +11,7 @@ class FooterComponent extends Component {
       <div
         className="container col-12"
         style={{
-          marginTop: '150px',
+          marginTop: "150px",
           color: "white",
           background:
             "linear-gradient(90deg, rgba(19,46,55,1) 0%, #3b5998 100%)",
@@ -35,9 +35,9 @@ class FooterComponent extends Component {
             textTransform: "uppercase"
           }}
         >
-          pronto tus comentarios te harán ganar
+          pronto tus comentarios te harán <span className="ganar">ganar</span>
         </p>
-        <p style={{marginTop: '-22px'}}>
+        <p style={{ marginTop: "-22px" }}>
           <span style={{ color: "red" }}>*</span>
           <span style={{ color: "gray", fontSize: "0.45em" }}>
             no enviamos correo spam.
